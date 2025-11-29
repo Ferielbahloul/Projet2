@@ -1,0 +1,717 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* En-tête et navigation */
+header {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Section principale */
+main {
+    padding: 40px;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background-color: white;
+    border-left: 5px solid #004080;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.info h2 {
+    margin: 0;
+    color: #004080;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    background-color: #004080;
+    color: white;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+/* Page d'accueil */
+.home {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.photo-profil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #004080;
+}
+
+.bio h2 {
+    margin: 0;
+    color: #004080;
+}
+
+.bio h3 {
+    color: #0066cc;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.bio p {
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.reseaux img {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    transition: transform 0.2s;
+}
+
+.reseaux img:hover {
+    transform: scale(1.1);
+}
+/* Page compétences */
+.competences {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.competences h2 {
+    color: #004080;
+    border-left: 5px solid #004080;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 15px 0 25px 0;
+}
+
+.skill {
+    background-color: #e6f0ff;
+    color: #004080;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #004080;
+    color: white;
+    transform: scale(1.05);
+}
+/* Page des stages */
+.stages {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.stage-card {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-left: 5px solid #004080;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.stage-card:hover {
+    transform: scale(1.02);
+}
+
+.stage-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.stage-info h2 {
+    color: #004080;
+    margin-bottom: 8px;
+}
+
+.stage-info p {
+    margin: 5px 0;
+}
+/* Page Manifestations */
+.manifestations {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.manifest-card {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-left: 5px solid #004080;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.manifest-card:hover {
+    transform: scale(1.02);
+}
+
+.manifest-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.manifest-info h2 {
+    color: #004080;
+    margin-bottom: 8px;
+}
+
+.manifest-info p {
+    margin: 5px 0;
+}
+/* Page Matières & Projets */
+.matieres {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+}
+
+.matieres h2 {
+    color: #004080;
+    border-left: 5px solid #004080;
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+.liste-matieres {
+    list-style-type: square;
+    margin-left: 30px;
+    line-height: 1.7;
+}
+
+.projets {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.projet-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #f9f9f9;
+    border-left: 5px solid #004080;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.projet-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.projet-info h3 {
+    color: #004080;
+    margin-bottom: 8px;
+}
+/* Page Passions & Qualités */
+.passions {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.passion-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-left: 5px solid #004080;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.passion-card:hover {
+    transform: scale(1.02);
+}
+
+.passion-card img {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.passion-info h2 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.qualites {
+    max-width: 900px;
+    background-color: white;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.qualites h2 {
+    color: #004080;
+    border-left: 5px solid #004080;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.qualites ul {
+    list-style-type: square;
+    margin-left: 30px;
+    line-height: 1.7;
+}
+/* ----------- QUIZ -------------- */
+
+.quiz-section {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.quiz-section h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 25px;
+}
+
+.quiz-section ol {
+    padding-left: 20px;
+}
+
+.quiz-section li {
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.quiz-section label {
+    font-weight: normal;
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Bouton valider */
+#submitBtn {
+    display: block;
+    margin: 25px auto;
+    padding: 12px 25px;
+    background: #004080;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#submitBtn:hover {
+    background: #0073e6;
+}
+
+/* Boîte de résultat */
+#resultat {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+#resultat.success {
+    background-color: #e1f8e7;
+    color: #116b2f;
+    border: 2px solid #33cc66;
+}
+
+#resultat.fail {
+    background-color: #ffe5e5;
+    color: #a10000;
+    border: 2px solid #ff4d4d;
+}
+
+/* Réponses colorées */
+.correct {
+    background-color: #d7f7d0;
+    border-left: 4px solid #33cc33;
+    padding-left: 10px;
+}
+
+.incorrect {
+    background-color: #ffd6d6;
+    border-left: 4px solid #ff4d4d;
+    padding-left: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+/* ---------------- CONTACT PAGE PRO ---------------- */
+
+.contact-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    gap: 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.contact-form h2,
+.contact-info h2 {
+    color: #004080;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* FORMULAIRE */
+.input-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #003366;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #c0c7d1;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #004080;
+    box-shadow: 0 0 6px rgba(0,64,128,0.3);
+    outline: none;
+}
+
+/* BOUTONS */
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0066cc;
+    transform: scale(1.05);
+}
+
+.btn-reset {
+    background-color: #777;
+    margin-left: 10px;
+}
+.btn-reset:hover {
+    background-color: #555;
+}
+
+/* INFO COLONNE DROITE */
+.contact-info p {
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.contact-info h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #004080;
+}
+
+/* Réseaux sociaux */
+.social-icons img {
+    width: 42px;
+    margin: 10px;
+    transition: 0.25s;
+    border-radius: 50%;
+    padding: 5px;
+}
+.social-icons img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+}
+
+
+/* Page Témoignage */
+.temoignage {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.temoignage-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    border: 4px solid #004080;
+}
+
+.temoignage-texte h2 {
+    color: #004080;
+    margin-bottom: 15px;
+}
+
+.temoignage-texte p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+blockquote {
+    font-style: italic;
+    background-color: #f0f6ff;
+    padding: 15px;
+    border-left: 4px solid #004080;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Bouton d'ajout */
+.btn-add {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-add:hover {
+    background-color: #0066cc;
+}
+
+/* Apparence des compétences */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skill {
+    background-color: #eaf1ff;
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: 1px solid #a2c5ff;
+    font-weight: bold;
+    color: #003366;
+}
+
+.temoignage-img {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: contain;  /* <-- affiche toute l’image sans couper */
+    border: 4px solid #004080;
+    background-color: white;
+}
+.temoignage {
+    max-width: 1100px;    /* un peu plus large */
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Règles minimales pour que les logos dans .card ne soient pas coupés */
+.card img {
+    width: 140px;      /* largeur uniforme */
+    height: 140px;     /* hauteur fixe pour cohérence */
+    max-width: 30%;    /* ne dépasse pas trop sur grand écran */
+    object-fit: contain;/* affiche toute l'image sans couper */
+    display: block;
+    border-radius: 8px;
+    background: #fff;
+    padding: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  }
+  
+  /* Option responsive (petits écrans) : image plus large et hauteur auto */
+  @media (max-width: 720px) {
+    .card img {
+      width: 160px;
+      height: auto;
+      max-width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+/* Corriger l'affichage des images dans les stages */
+.stage-card img {
+    width: 140px;          /* taille uniforme */
+    height: 140px;         /* cadre propre */
+    object-fit: contain;   /* ne coupe jamais l’image */
+    background: #fff;
+    padding: 6px;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-right: 20px;
+}
+
+/* Responsive : si l'écran est petit, l'image devient plus large */
+@media (max-width: 720px) {
+    .stage-card img {
+        width: 160px;
+        height: auto;
+        max-width: 60%;
+        margin: 0 auto 15px auto;
+    }
+}
+
+  
+  

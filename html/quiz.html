@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Développement Web - Feriel Bahloul</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/quiz.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Quiz : Développement Web</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="Certificats.html">Certificats</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="quiz-section">
+            <h2>Testez vos connaissances en Développement Web !</h2>
+            <form id="quizForm">
+                <ol>
+                    <li>
+                        Quelle balise HTML permet d’insérer une image ?
+                        <br>
+                        <label><input type="radio" name="q1" value="a"> &lt;image&gt;</label><br>
+                        <label><input type="radio" name="q1" value="b"> &lt;img&gt;</label><br>
+                        <label><input type="radio" name="q1" value="c"> &lt;picture&gt;</label>
+                    </li>
+
+                    <li>
+                        Quelle propriété CSS permet de changer la couleur du texte ?
+                        <br>
+                        <label><input type="radio" name="q2" value="a"> text-color</label><br>
+                        <label><input type="radio" name="q2" value="b"> color</label><br>
+                        <label><input type="radio" name="q2" value="c"> font-color</label>
+                    </li>
+
+                    <li>
+                        Quel attribut HTML définit le lien d’un hypertexte ?
+                        <br>
+                        <label><input type="radio" name="q3" value="a"> src</label><br>
+                        <label><input type="radio" name="q3" value="b"> link</label><br>
+                        <label><input type="radio" name="q3" value="c"> href</label>
+                    </li>
+
+                    <li>
+                        Quelle balise est utilisée pour créer une liste ordonnée ?
+                        <br>
+                        <label><input type="radio" name="q4" value="a"> &lt;ul&gt;</label><br>
+                        <label><input type="radio" name="q4" value="b"> &lt;ol&gt;</label><br>
+                        <label><input type="radio" name="q4" value="c"> &lt;li&gt;</label>
+                    </li>
+
+                    <li>
+                        En JavaScript, comment déclare-t-on une variable ?
+                        <br>
+                        <label><input type="radio" name="q5" value="a"> var</label><br>
+                        <label><input type="radio" name="q5" value="b"> int</label><br>
+                        <label><input type="radio" name="q5" value="c"> variable</label>
+                    </li>
+
+                    <li>
+                        Quelle extension correspond à un fichier de style ?
+                        <br>
+                        <label><input type="radio" name="q6" value="a"> .css</label><br>
+                        <label><input type="radio" name="q6" value="b"> .html</label><br>
+                        <label><input type="radio" name="q6" value="c"> .js</label>
+                    </li>
+
+                    <li>
+                        Quelle propriété CSS permet de centrer un texte ?
+                        <br>
+                        <label><input type="radio" name="q7" value="a"> align</label><br>
+                        <label><input type="radio" name="q7" value="b"> text-align</label><br>
+                        <label><input type="radio" name="q7" value="c"> position</label>
+                    </li>
+
+                    <li>
+                        Quelle balise HTML sert à insérer un lien vers un fichier CSS ?
+                        <br>
+                        <label><input type="radio" name="q8" value="a"> &lt;style&gt;</label><br>
+                        <label><input type="radio" name="q8" value="b"> &lt;script&gt;</label><br>
+                        <label><input type="radio" name="q8" value="c"> &lt;link&gt;</label>
+                    </li>
+
+                    <li>
+                        En JavaScript, quelle fonction affiche un message dans la console ?
+                        <br>
+                        <label><input type="radio" name="q9" value="a"> alert()</label><br>
+                        <label><input type="radio" name="q9" value="b"> console.log()</label><br>
+                        <label><input type="radio" name="q9" value="c"> print()</label>
+                    </li>
+
+                    <li>
+                        Quelle propriété CSS définit la taille du texte ?
+                        <br>
+                        <label><input type="radio" name="q10" value="a"> text-size</label><br>
+                        <label><input type="radio" name="q10" value="b"> font-size</label><br>
+                        <label><input type="radio" name="q10" value="c"> size</label>
+                    </li>
+                </ol>
+
+                <button type="button" id="submitBtn">Valider</button>
+            </form>
+
+            <div id="resultat"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Feriel Bahloul | Tous droits réservés</p>
+          <!-- Colonne Informations -->
+          <div class="contact-info">
+           
+
+            <p><strong>📞 Téléphone :</strong> +216 22 462 915</p>
+            <p><strong>📧 Email :</strong> bahloulferiel311@gmail.com</p>
+            <p><strong>🏠 Adresse :</strong> Sfax, Route de Tunis Km 7,5</p>
+
+            <h3>Réseaux sociaux</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Ferielbahloul" target="_blank">
+                    <img src="../images/GitHub2.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/bahloulferiel/" target="_blank">
+                    <img src="../images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences - Feriel Bahloul</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mes Compétences</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parcours.html">Parcours</a></li>
+                <li><a href="competences.html" class="active">Compétences</a></li>
+                <li><a href="stages.html">Stages</a></li>
+                <li><a href="manifestations.html">Manifestations</a></li>
+                <li><a href="Certificats.html">Certificats</a></li>
+                <li><a href="passions.html">Passions</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="temoignage.html">Témoignage</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="competences">
+
+            <h2>Langages de Programmation</h2>
+            <div class="skills" id="langages">
+                <div class="skill">C</div>
+                <div class="skill">C#</div>
+                <div class="skill">Java</div>
+                <div class="skill">PL/SQL</div>
+            </div>
+
+            <!-- Bouton d'ajout -->
+            <button class="btn-add" onclick="ajouterCompetence('langages')">Ajouter un langage</button>
+
+
+            <h2>Technologies Web</h2>
+            <div class="skills" id="web">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">PHP</div>
+            </div>
+
+            <button class="btn-add" onclick="ajouterCompetence('web')">Ajouter une technologie web</button>
+
+
+            <h2>Frameworks & Bibliothèques</h2>
+            <div class="skills" id="frameworks">
+                <div class="skill">Symfony</div>
+                <div class="skill">Spring Boot</div>
+                <div class="skill">React</div>
+                <div class="skill">Angular</div>
+                <div class="skill">Laravel</div>
+                <div class="skill">Flutter</div>
+            </div>
+
+            <button class="btn-add" onclick="ajouterCompetence('frameworks')">Ajouter un framework</button>
+
+
+            <h2>Bases de Données</h2>
+            <div class="skills" id="bdd">
+                <div class="skill">MySQL</div>
+                <div class="skill">SQL Server</div>
+                <div class="skill">Firebase</div>
+                <div class="skill">phpMyAdmin</div>
+                <div class="skill">XML / JSON</div>
+            </div>
+
+            <button class="btn-add" onclick="ajouterCompetence('bdd')">Ajouter une base de données</button>
+
+
+            <h2>Outils & Méthodes</h2>
+            <div class="skills" id="outils">
+                <div class="skill">Trello</div>
+                <div class="skill">GitHub</div>
+                <div class="skill">Linux / Unix</div>
+                <div class="skill">Méthodes Agiles</div>
+            </div>
+
+            <button class="btn-add" onclick="ajouterCompetence('outils')">Ajouter un outil</button>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Feriel Bahloul | Tous droits réservés</p>
+          <!-- Colonne Informations -->
+          <div class="contact-info">
+           
+
+            <p><strong>📞 Téléphone :</strong> +216 22 462 915</p>
+            <p><strong>📧 Email :</strong> bahloulferiel311@gmail.com</p>
+            <p><strong>🏠 Adresse :</strong> Sfax, Route de Tunis Km 7,5</p>
+
+            <h3>Réseaux sociaux</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Ferielbahloul" target="_blank">
+                    <img src="../images/GitHub2.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/bahloulferiel/" target="_blank">
+                    <img src="../images/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/competences.js"></script>
+
+</body>
+</html>
